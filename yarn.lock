@@ -193,8 +193,9 @@ node-fetch@^2.6.1, node-fetch@^2.6.7:
   dependencies:
     whatwg-url "^5.0.0"
 
-rescript-discordjs@../rescript-discordjs:
+"rescript-discordjs@https://github.com/youngkidwarrior/rescript-discordjs.git":
   version "0.0.1"
+  resolved "https://github.com/youngkidwarrior/rescript-discordjs.git#a2e4c09187720cdfadd18d50aca3f63df74048af"
   dependencies:
     rescript "*"
 

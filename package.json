@@ -21,6 +21,6 @@
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
     "rescript": "*",
-    "rescript-discordjs": "https://github.com/youngkidwarrior/rescript-discordjs.git"
+    "rescript-discordjs": "https://github.com/youngkidwarrior/rescript-discordjs.git#v13"
   }
 }

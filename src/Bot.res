@@ -1,5 +1,10 @@
 open Discord
 
+module type Command = {
+  let data: SlashCommandBuilder.t
+  let execute: Interaction.t => Js.Promise.t<Message.t>
+}
+
 Env.createEnv()
 
 let envConfig = Env.getConfig()
@@ -10,6 +15,7 @@ let envConfig = switch envConfig {
 
 let activeChannelId = envConfig["discordChannelId"]
 let clientId = envConfig["discordClientId"]
+
 let options: Client.clientOptions = {
   intents: ["GUILDS", "GUILD_MESSAGES"],
 }
@@ -21,6 +27,21 @@ let commands: Collection.t<string, module(Command)> = Collection.make()
 commands
 ->Collection.set(Commands_Help.data->SlashCommandBuilder.getCommandName, module(Commands_Help))
 ->ignore
+
+let onMessage = (message: Message.t) => {
+  let channel = message->Message.getMessageChannel
+  let channelId = channel->Channel.getChannelId
+  channelId !== activeChannelId
+    ? ()
+    : {
+        let hasAttachment = message->Message.getMessageAttachments->Collection.getSize > 0
+        let hasEmbed = message->Message.getMessageEmbeds->Collection.getSize > 0
+        let hasLink = message->Message.getMessageContent->Js.String2.includes("http")
+        let isBot = message->Message.getMessageAuthor->User.getUserId === clientId
+        let allowed = hasAttachment || hasEmbed || hasLink || isBot
+        allowed ? () : message->Message.delete->ignore
+      }
+}
 
 let onInteraction = (interaction: Interaction.t) => {
   !(interaction->Interaction.isCommand)
@@ -43,6 +64,8 @@ client->Client.on(
     },
   ),
 )
+
+client->Client.on(#messageCreate(message => message->onMessage))
 
 client->Client.on(#interactionCreate(interaction => interaction->onInteraction))
 

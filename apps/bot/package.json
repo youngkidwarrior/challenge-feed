@@ -1,0 +1,21 @@
+{
+  "name": "challenge-feed-bot",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/Bot.bs.js",
+    "production": "rescript build && node src/DeployCommands.bs.js && node src/Bot.bs.js"
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^0.13.0",
+    "@discordjs/rest": "^0.4.1",
+    "discord-api-types": "^0.32.0",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  }
+}

@@ -2,11 +2,11 @@
   "name": "challenge-feed-bot",
   "version": "0.0.1",
   "sources": {
-    "dir": "src",
+    "dir": "apps/bot",
     "subdirs": true
   },
   "package-specs": {
-    "module": "commonjs",
+    "module": "es6",
     "in-source": true
   },
   "suffix": ".bs.js",

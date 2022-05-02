@@ -31,9 +31,9 @@
   integrity sha512-zmjq+l/rV35kE6zRrwe8BHqV78JvIh2ybJeZavBi5NySjWXqN3hmmAKg7kYMMXSeiWtSsMoZ/+MQi0DiQWy2lw==
 
 "@discordjs/collection@^0.7.0-dev":
-  version "0.7.0-dev.1651493036-4ba0f56"
-  resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.7.0-dev.1651493036-4ba0f56.tgz#9d3ff2dd9e3eb21a754b4d54ead686750b117f42"
-  integrity sha512-/6eYweo3mprHqYO+DTM89mZNp1AdvZelMZGSeiCUtMadhsdjycR1cfA08fRtivDGaRnvmecDaKIEfig9mXaRxw==
+  version "0.7.0-dev.1650931751-df64d3e"
+  resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.7.0-dev.1650931751-df64d3e.tgz#23e41e61bb4b10b70789ed4b14aa4aab4d28f9ac"
+  integrity sha512-8oPvjx69kAUz5r+I1uzLZrsgSPIC4ybbK4eBAgx2ShNLliFk9hbg0vNkFfJoKKAoS6Mzfxo/47B0+rKdEBXW6w==
 
 "@discordjs/rest@^0.4.1":
   version "0.4.1"
@@ -60,9 +60,9 @@
   integrity sha512-FFTlPOWZX1kDj9xCAsRzH5xEJfawg1lNoYAA+ecOWJMHOfiZYb1uXOI3ne9U4UILSEPwfE68p3T9wUHwIQfR0g==
 
 "@sapphire/shapeshift@^2.0.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/shapeshift/-/shapeshift-2.2.0.tgz#9c1221b538fd0f966766158176c686a3a5c98490"
-  integrity sha512-UEnKgMlQyI0yY/q+lCMX0VJft9y86IsesgbIQj6e62FBYSaMVr+IaMNpi4z45Q14VnuMACbK0yrbHISNqgUYcQ==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/shapeshift/-/shapeshift-2.1.0.tgz#cef43aa992f12be578166ce1fc27c9a2a945d4b8"
+  integrity sha512-Z1ISLP9pNI3jpKJxx82xtDpEsfomhJ3iPqcKdYLjAHmQP2X5yqQF6phA0Wd+MmdXp081wepOiT59XEN0xdTVvQ==
 
 "@sapphire/snowflake@^3.2.1":
   version "3.2.2"
@@ -83,9 +83,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "17.0.31"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.31.tgz#a5bb84ecfa27eec5e1c802c6bbf8139bdb163a5d"
-  integrity sha512-AR0x5HbXGqkEx9CadRH3EBYx/VkiUgZIhP4wvPn/+5KIsgpNoyFaRlVe0Zlx9gRtg8fA06a9tskE2MSN7TcG4Q==
+  version "17.0.27"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.27.tgz#f4df3981ae8268c066e8f49995639f855469081e"
+  integrity sha512-4/Ke7bbWOasuT3kceBZFGakP1dYN2XFd8v2l9bqF2LNWrmeU07JLpp56aEeG6+Q3olqO5TvXpW0yaiYnZJ5CXg==
 
 "@types/ws@^8.2.2":
   version "8.5.3"
@@ -156,14 +156,6 @@ fast-deep-equal@^3.1.3:
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
-find-up@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/find-up/-/find-up-6.3.0.tgz#2abab3d3280b2dc7ac10199ef324c4e002c8c790"
-  integrity sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw==
-  dependencies:
-    locate-path "^7.1.0"
-    path-exists "^5.0.0"
-
 form-data@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-3.0.1.tgz#ebd53791b78356a99af9a300d4282c4d5eb9755f"
@@ -181,13 +173,6 @@ form-data@^4.0.0:
     asynckit "^0.4.0"
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
-
-locate-path@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-7.1.0.tgz#241d62af60739f6097c055efe10329c88b798425"
-  integrity sha512-HNx5uOnYeK4SxEoid5qnhRfprlJeGMzFRKPLCf/15N3/B4AiofNwC/yq7VBKdVk9dx7m+PiYCJOGg55JYTAqoQ==
-  dependencies:
-    p-locate "^6.0.0"
 
 mime-db@1.52.0:
   version "1.52.0"
@@ -208,32 +193,13 @@ node-fetch@^2.6.1, node-fetch@^2.6.7:
   dependencies:
     whatwg-url "^5.0.0"
 
-p-limit@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-4.0.0.tgz#914af6544ed32bfa54670b061cafcbd04984b644"
-  integrity sha512-5b0R4txpzjPWVw/cXXUResoD4hb6U/x9BH08L7nw+GN1sezDzPdxeRvpc9c433fZhBan/wusjbCsqwqm4EIBIQ==
-  dependencies:
-    yocto-queue "^1.0.0"
-
-p-locate@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/p-locate/-/p-locate-6.0.0.tgz#3da9a49d4934b901089dca3302fa65dc5a05c04f"
-  integrity sha512-wPrq66Llhl7/4AGC6I+cqxT07LhXvWL08LNXz1fENOw0Ap4sRZZ/gZpTTJ5jpurzzzfS2W/Ge9BY3LgLjCShcw==
-  dependencies:
-    p-limit "^4.0.0"
-
-path-exists@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-5.0.0.tgz#a6aad9489200b21fab31e49cf09277e5116fb9e7"
-  integrity sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==
-
 "rescript-discordjs@https://github.com/youngkidwarrior/rescript-discordjs.git#v13":
   version "0.0.1"
   resolved "https://github.com/youngkidwarrior/rescript-discordjs.git#c66b97f822ecd5e1a1ffb2fa4afa9fbe0f871289"
   dependencies:
     rescript "*"
 
-rescript@*, rescript@^9.1.4:
+rescript@*:
   version "9.1.4"
   resolved "https://registry.yarnpkg.com/rescript/-/rescript-9.1.4.tgz#1eb126f98d6c16942c0bf0df67c050198e580515"
   integrity sha512-aXANK4IqecJzdnDpJUsU6pxMViCR5ogAxzuqS0mOr8TloMnzAjJFu63fjD6LCkWrKAhlMkFFzQvVQYaAaVkFXw==
@@ -267,14 +233,9 @@ whatwg-url@^5.0.0:
     webidl-conversions "^3.0.0"
 
 ws@^8.4.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-8.6.0.tgz#e5e9f1d9e7ff88083d0c0dd8281ea662a42c9c23"
-  integrity sha512-AzmM3aH3gk0aX7/rZLYvjdvZooofDu3fFOzGqcSnQ1tOcTWwhM/o+q++E8mAyVVIyUdajrkzWUGftaVSDLn1bw==
-
-yocto-queue@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-1.0.0.tgz#7f816433fb2cbc511ec8bf7d263c3b58a1a3c251"
-  integrity sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.5.0.tgz#bfb4be96600757fe5382de12c670dab984a1ed4f"
+  integrity sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==
 
 zod@^3.11.6:
   version "3.14.4"

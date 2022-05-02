@@ -1,26 +1,16 @@
 {
-  "name": "rescript-project-template",
-  "version": "0.0.1",
-  "scripts": {
-    "build": "rescript",
-    "clean": "rescript clean -with-deps",
-    "start": "rescript build -w",
-    "dev": "node src/Bot.bs.js",
-    "production": "rescript build && node src/DeployCommands.bs.js &&  node src/Bot.bs.js"
-  },
-  "keywords": [
-    "rescript"
+  "private": true,
+  "workspaces": [
+    "apps/*"
   ],
-  "author": "",
-  "license": "MIT",
+  "scripts": {
+    "bot": "yarn workspace challenge-feed-bot",
+    "re:start": "rescript build -w"
+  },
   "dependencies": {
-    "@discordjs/builders": "^0.13.0",
-    "@discordjs/rest": "^0.4.1",
     "@ryyppy/rescript-promise": "^2.1.0",
-    "discord-api-types": "^0.32.0",
-    "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0",
-    "rescript": "*",
+    "find-up": "^6.3.0",
+    "rescript": "^9.1.4",
     "rescript-discordjs": "https://github.com/youngkidwarrior/rescript-discordjs.git#v13"
   }
 }
